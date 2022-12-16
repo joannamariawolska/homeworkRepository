@@ -11,11 +11,13 @@ class WeekDaysTest {
         String getDayOfWeek = WeekDays.getDayOfWeek(1);
         Assertions.assertEquals("Monday", getDayOfWeek);
     }
+
     @Test
     void shouldBeWeekendDay() {
         String getDayOfWeek = WeekDays.getDayOfWeek(6);
         Assertions.assertEquals("Weekend", getDayOfWeek);
     }
+    
     @Test
     void shouldBeNoSuchDay() {
         String getDayOfWeek = WeekDays.getDayOfWeek(10);
