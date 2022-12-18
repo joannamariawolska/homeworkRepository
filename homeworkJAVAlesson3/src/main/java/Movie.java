@@ -1,18 +1,18 @@
 public class Movie {
 
-    String movieTitle;
-    String nameOfDirector;
-    int theLengthOfTheMovie;
-    int yearOfProduction;
+    private final String title;
+    private final String director;
+    private final int lengthInMinutes;
+    private final int yearOfProduction;
 
     protected String getDescriptionOfMovie(){
-        return "Twój film to " + movieTitle + " z " + yearOfProduction + ". " + "Wyreżyserował " + nameOfDirector  + ". " +"Długość filmu to " + theLengthOfTheMovie + "minuty.";
+        return "Twój film to " + title + " z " + yearOfProduction + ". " + "Wyreżyserował " + director  + ". " + "Długość filmu to " + lengthInMinutes + " minuty.";
     }
 
-    protected Movie(String movieTitle, String nameOfDirector, int theLengthOfTheMovie, int yearOfProduction) {
-        this.movieTitle = movieTitle;
-        this.nameOfDirector = nameOfDirector;
-        this.theLengthOfTheMovie = theLengthOfTheMovie;
+    protected Movie(String title, String director, int lengthInMinutes, int yearOfProduction) {
+        this.title = title;
+        this.director = director;
+        this.lengthInMinutes = lengthInMinutes;
         this.yearOfProduction = yearOfProduction;
     }
 }
