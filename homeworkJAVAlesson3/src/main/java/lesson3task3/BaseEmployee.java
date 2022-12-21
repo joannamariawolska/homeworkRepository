@@ -2,7 +2,6 @@ package lesson3task3;
 
 public abstract class BaseEmployee {
 
-
     private final String name;
     private final String surname;
     private final int employmentYear;
@@ -18,7 +17,6 @@ public abstract class BaseEmployee {
         this.salary = BASE_SALARY;
         this.bonus = bonus;
     }
-
 
     public int getWorkYears() {
         return 2022-employmentYear;
