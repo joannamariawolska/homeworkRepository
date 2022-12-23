@@ -5,25 +5,24 @@ public abstract class BaseEmployee {
     private final String name;
     private final String surname;
     private final int employmentYear;
-    private final int salary;
+    //private final int salary;
     public static final int BASE_SALARY = 3000;
+    private final int salary;
 
-    private int bonus;
 
-    public BaseEmployee(String name, String surname, int employmentYear) {
+    public BaseEmployee(String name, String surname, int employmentYear, int salary) {
         this.name = name;
         this.surname = surname;
         this.employmentYear = employmentYear;
         this.salary = BASE_SALARY;
-        this.bonus = bonus;
     }
 
     public int getWorkYears() {
         return 2022-employmentYear;
     }
 
-    public int getBaseSalary(){
-        return BASE_SALARY;
+    public int getSalary(){
+        return this.salary;
     }
 
     public abstract int calculateMonthlySalary();
